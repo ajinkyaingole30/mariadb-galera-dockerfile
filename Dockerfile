@@ -27,6 +27,6 @@ COPY root /
 RUN /usr/libexec/container-setup.sh
 RUN yum update -y
 VOLUME ["/var/lib/mysql"]
-#USER 27:27
+USER 27:27
 
 ENTRYPOINT ["/usr/bin/container-entrypoint.sh"]
